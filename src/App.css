@@ -1,42 +1,55 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  font-family: sans-serif;
+  background-color: #b8b8b8;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navbar {
+  background-color: #808080; /* gris secundario */
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-brand {
+  font-size: 1.6rem; /* tamaño de fuente personalizado */
+  color: #000000; /* color de texto oscuro */
+  margin-left: 35px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.container {
+  padding-top: 10px; /* Ajuste de padding superior */
+  padding-bottom:10px; /* Ajuste de padding inferior */
 }
 
 .card {
-  padding: 2em;
+  background-color: #646464; /* Fondo gris secundario */
+  color: #000000; /* Texto oscuro */
+  border-radius: 18px; /* Bordes redondeados */
+  padding: 100px; /* Padding interno */
+  margin: 10px; /* Centrar la card horizontalmente */
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  height: 30px;
+  margin-top: 100px;
+  font-size: 18px;
 }
 
-.read-the-docs {
-  color: #888;
+
+.table-custom {
+  width: 100%; /* Ancho completo */
+  max-width: 1200px; /* Ancho máximo */
+  margin: auto; /* Centrar la tabla horizontalmente */
+}
+
+th {
+  background-color: #d3d3d3 !important; /* Color gris */
+  color: #000 !important; /* Color del texto */
+}
+
+.breadcrumb{
+  margin-top: 80px;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
