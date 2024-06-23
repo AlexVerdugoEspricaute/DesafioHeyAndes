@@ -30,8 +30,8 @@ function Sales() {
         return acc;
     }, {});
 
-    // Ordenar las agencias alfabéticamente
-    const sortedAgencies = Object.keys(groupedSales).sort();
+    // Ordenar las agencias alfabéticamente sin importar mayúsculas o minúsculas
+    const sortedAgencies = Object.keys(groupedSales).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
 
     return (
         <div className="container-fluid mt-5">

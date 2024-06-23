@@ -7,6 +7,9 @@ function SalesDetails() {
     const salesList = useSelector((state) => state.sales.salesList); // Obtiene la lista de ventas del estado global de Redux
     const filteredSales = salesList.filter((sale) => sale.nameAgency === id); // Filtra las ventas por el nombre de la agencia obtenido de los parámetros de la URL
 
+    // Ordenar ventas filtradas por nombre del cliente (name) de forma ascendente sin importar mayúsculas o minúsculas
+    filteredSales.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
+
     // Si no hay ventas filtradas para esta agencia, muestra un mensaje
     if (filteredSales.length === 0) {
         return <div>No se encontraron ventas para esta empresa.</div>;
